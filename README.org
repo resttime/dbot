@@ -1,0 +1,15 @@
+* dbot
+Discord bot to be used with the factorio game
+
+Requires a fork of websocket-driver that fixes a bug:
+https://github.com/resttime/websocket-driver
+
+* Usage
+Configure the credentials for the bot in [[./src/dbot.lisp][dbot.lisp]] first!
+#+BEGIN_SRC lisp
+(start-server) ;; Start the factorio server
+(test CHANNEL-ID) ;; Connect bot and process factorio stdout
+#+END_SRC
+
+* License
+Project under [[./LICENSE][MIT License]]
